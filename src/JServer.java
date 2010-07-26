@@ -29,6 +29,7 @@ class ListenerThread extends Thread {
 
     public void run() {
         while (true) {
+            
             // our canned response for now
             ByteBuffer resp = ByteBuffer.wrap(new String("got it\n").getBytes());
             try {
